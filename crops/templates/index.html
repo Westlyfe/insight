@@ -1,1 +1,32 @@
-<h2>Its working</h2>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+<body>
+    <form action="result" method="post">
+        {% csrf_token %}
+        <legend>Welcome farmer</legend>
+        <fieldset>
+            <label for="rainfall">Rainfall</label><br>
+            <input type="number" name="rainfal"><br>
+            <label for="rainfall">Humidity</label><br>
+            <input type="number" name="humidity"><br>
+            <label for="rainfall">K factor</label><br>
+            <input type="number" name="k"><br>
+            <label for="rainfall">P</label><br>
+            <input type="number"><br>
+            <label for="rainfall">Ph</label><br>
+            <input type="number"><br>
+            <label for="rainfall">N</label><br>
+            <input type="number"><br>
+            <label for="rainfall">templature</label><br>
+            <input type="number"><br>
+            <input type="submit" name="submit" value="Submit">
+        </fieldset>
+    </form>
+</body>
+</html>
